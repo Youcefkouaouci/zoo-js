@@ -1,0 +1,15 @@
+{
+  "name": "exam-js-youcef-kouaouci",
+  "version": "1.0.0",
+  "description": "Voici un **plan clair des étapes à suivre pour chaque élément** de ton évaluation en JavaScript, suivi d’un **fichier template de base** en JS/HTML pour t’aider à démarrer.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

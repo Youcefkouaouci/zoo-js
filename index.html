@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo🦁</title>
+  </head>
+  <body>
+    <h1>🦁Welcome to the Zoo🦁</h1>
+
+    <!-- Formulaire d'ajout d'animal -->
+    <div class="form-container">
+      <h2>🐾 Ajouter un nouvel animal</h2>
+      <div class="success-message" id="successMessage">
+        Animal ajouté avec succès !
+      </div>
+      <form id="animalForm">
+        <div class="form-group">
+          <label for="animalName">Nom de l'animal :</label>
+          <input type="text" id="animalName" name="nom" required />
+          <div class="error-message">Le nom est obligatoire</div>
+        </div>
+
+        <div class="form-group">
+          <label for="animalDescription">Description :</label>
+          <textarea
+            id="animalDescription"
+            name="description"
+            required
+          ></textarea>
+          <div class="error-message">La description est obligatoire</div>
+        </div>
+
+        <div class="form-group">
+          <label for="animalCategory">Catégorie :</label>
+          <select id="animalCategory" name="categorie" required>
+            <option value="">Choisir une catégorie</option>
+            <option value="terrestre">Terrestre</option>
+            <option value="aquatique">Aquatique</option>
+            <option value="volant">Volant</option>
+          </select>
+          <div class="error-message">
+            Veuillez sélectionner une catégorie valide (terrestre, aquatique, ou
+            volant)
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="animalImage">Lien de l'image :</label>
+          <input type="url" id="animalImage" name="image" required />
+          <div class="error-message">
+            Veuillez entrer une URL d'image valide
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Ajouter l'animal</button>
+      </form>
+    </div>
+
+    <div class="filter-container">
+      <label for="animalFilter">Filtrer par catégorie :</label>
+      <select id="animalFilter">
+        <option value="tous">Tous les animaux</option>
+        <option value="terrestre">Terrestre</option>
+        <option value="aquatique">Aquatique</option>
+        <option value="volant">Volant</option>
+      </select>
+    </div>
+
+    <div id="animals"></div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

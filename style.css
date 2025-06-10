@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.filter-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #34495e;
+}
+
+select {
+  padding: 8px 12px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styles pour le formulaire */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #27ae60;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #27ae60;
+}
+
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+  border-color: #e74c3c;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+.form-group.error .error-message {
+  display: block;
+}
+
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #219a52;
+}
+
+.submit-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+#animals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.animal-card {
+  border: 2px solid #e74c3c;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.animal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.animal-card h2 {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.animal-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.terrestre {
+  background-color: #27ae60;
+  color: white;
+}
+
+.aquatique {
+  background-color: #3498db;
+  color: white;
+}
+
+.volant {
+  background-color: #f39c12;
+  color: white;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-top: 50px;
+}
